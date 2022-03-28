@@ -3,6 +3,7 @@ function first(a){
         console.log("inside first",temp)   
     function second(){
         console.log("Inside second",temp)
+        console.log("inside second ",a)
     }
     
     return second
