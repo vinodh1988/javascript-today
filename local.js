@@ -4,7 +4,7 @@ function fun(){
     console.log("outer ",a)
 
     {
-         let al=90  //block level variable
+         let a=90  //block level variable
         console.log("inner",a)
     }
 
