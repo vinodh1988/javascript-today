@@ -1,4 +1,5 @@
 function getValueThroughCallback(callback){
+    
     callback(Math.round(Math.random()*100000))
 }
 
