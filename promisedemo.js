@@ -1,9 +1,10 @@
 //Asynchronous and non blocking
 function getData(){
      return new Promise(function(resolve,reject){
-        $.get("https://api.quotable.io/random",function(data){
+        $.get("https://api.quotable.io/random",function(data,status){
             console.log("hi")
             resolve(data)
+            
            })
 
      })
