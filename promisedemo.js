@@ -9,7 +9,8 @@ function getData(){
 
      })
 }
-
+/*
+function readData(){
 const data=getData()
 console.log("Received data")
 data.then(
@@ -17,7 +18,22 @@ data.then(
     (err)=>console.log(err)
 )
 console.log("Other code")
+}
+*/
 
+async function readData() {
+    try{
+      let data = await getData()
+      console.log(data)
+      console.log("Other code")
+    }
+    catch(e){
+        console.log(e)
+    }
+}
+
+readData()
+console.log("outside world")
 
 /*----------------------------------------------------------------
  [resource]<- Provider?  < --- Seeker
